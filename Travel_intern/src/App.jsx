@@ -4,7 +4,7 @@ import MyRoute from './MyRoute'
 const App = () => {
   return (
     <>
-<MyRoute/>
+      <MyRoute />
     </>
   )
 }
