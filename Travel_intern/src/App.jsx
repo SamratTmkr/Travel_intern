@@ -6,6 +6,7 @@ const App = () => {
     <div className='bg-black'>App</div>
     <div className="bg-yellow-400">dasd</div>
     <div className="bg-yellow-400 font-extrabold text-8xl">test</div>
+    <div className="bg-orange-500">Orange</div>
     
     </>
   )
