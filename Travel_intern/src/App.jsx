@@ -1,15 +1,18 @@
 import React from 'react'
-// import Account from './pages/Account'
 import { Outlet } from 'react-router-dom'
+import Layout from './layout/Layout'
+
+
 
 const App = () => {
   return (
     <>
-   {/* <Account/> */}
+ 
    <main>
+    <Layout/>
    <Outlet/>
    </main>
-    
+     
     </>
   )
 }

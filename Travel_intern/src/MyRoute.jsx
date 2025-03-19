@@ -1,7 +1,6 @@
-import { createBrowserRouter } from "react-router-dom";
 
+import { createBrowserRouter } from "react-router-dom";
 import Account from "./pages/Account";
-import Home from "./pages/home";
 import App from "./App";
 
 
@@ -11,10 +10,10 @@ const router = createBrowserRouter ([
         path:"/",
         element: <App />,
         children:[
-            {
-                path:"",
-                element: <Home />
-            },
+            // {
+            //     path:"",
+            //     element: <Home />
+            // },
             {
                 path:"account",
                 element: <Account />
@@ -24,3 +23,4 @@ const router = createBrowserRouter ([
     }
 ])
 export default router
+

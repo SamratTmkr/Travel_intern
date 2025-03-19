@@ -9,13 +9,13 @@ const Account = () => {
   return (
     <>
     <div>
-        <div className='min-h-screen w-full px-[102px] mt-[135px] bg-[#FAFBFC]'>
-            <div className='profile_pic h-[350px] w-full relative'>
+        <div className='min-h-screen w-full px-[102px] md:px-8 lg:px-24 mt-[135px] bg-[#FAFBFC]'>
+            <div className='profile_pic h-[350px] md:h-80 w-full relative'>
                 <img src={CoverPic} alt="user cover pic" width={'100%'} height={'100%'} className='w-full h-full' />
                 <div className='absolute bottom-5 right-[20px] '>
                     <label htmlFor="userCoverPic" className='cursor-pointer flex gap-2 justify-center items-center py-2 px-4 bg-blue-300 rounded-sm oultine-none border-none'>
                     <IoCloudUpload /> 
-                    <span className='text-[14px]'>Upload new cover</span>
+                    <span className='text-[14px] sm:hid'>Upload new cover</span>
                     </label>
                     <input type="file" id='userCoverPic' className=' hidden ' />
                 </div>
@@ -50,28 +50,28 @@ const Account = () => {
                     <div>
                         <form action="" className='mt-5'>
                             <div className='flex justify-between h-[52px] mb-5.5'>
-                                <div  className='flex flex-col'>
+                                <div  className='flex flex-col '>
                             <label htmlFor="name" className='text-gray-500'>Name</label>
                             <input type="text" id="name" value={"Preetam Ganesh"} className='font-semibold' />
                                 </div>
                                 <div >
-                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border'>
+                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
                                     <RiEditBoxFill  className='text-[16px]'/>
                                     <span>Change</span>
                                     </button>
                                 </div>
                             </div>
                             <div className='flex justify-between h-[52px] mb-5.5'>
-                                <div  className='flex flex-col'>
+                                <div  className='flex flex-col '>
                             <label htmlFor="email" className='text-gray-500'>Email</label>
                             <input type="email" id="email" value={"preetamsthings@gamil.com"} className='font-semibold' />
                                 </div>
                                 <div className='flex gap-2' >
-                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border'>
+                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
                                     < IoAddCircle  className='text-[16px]' />
                                     <span>Add another email</span>
                                     </button>
-                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border'>
+                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
                                     <RiEditBoxFill  className='text-[16px]'/>
                                     <span>Change</span>
                                     </button>
@@ -83,43 +83,43 @@ const Account = () => {
                             <input type="passsword" id="passsword" value={"********"} className='font-semibold' />
                                 </div>
                                 <div >
-                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border'>
+                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
                                     <RiEditBoxFill  className='text-[16px]'/>
                                     <span>Change</span>
                                     </button>
                                 </div>
                             </div>
                             <div className='flex justify-between h-[52px] mb-5.5'>
-                                <div  className='flex flex-col'>
-                            <label htmlFor="phone" className='text-gray-500'>Name</label>
+                                <div  className='flex flex-col '>
+                            <label htmlFor="phone" className='text-gray-500'>Phone Number</label>
                             <input type="tel" id="phone" value={"9*********"} className='font-semibold' />
                                 </div>
                                 <div >
-                                    <button className='flex items-center gap-2 text-[16px] px-4 py-2 rounded-lg border'>
+                                    <button className='flex items-center gap-2 text-[16px] px-4 py-2 rounded-lg border md:mt-0'>
                                     <RiEditBoxFill  />
                                     <span>Change</span>
                                     </button>
                                 </div>
                             </div>
                             <div className='flex justify-between h-[52px] mb-5.5'>
-                                <div  className='flex flex-col'>
+                                <div  className='flex flex-col '>
                             <label htmlFor="address" className='text-gray-500'>Address</label>
                             <input type="text" id="address" value={"Preetam Ganesh"} className='font-semibold' />
                                 </div>
                                 <div >
-                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border'>
+                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
                                     <RiEditBoxFill className='text-[16px]' />
                                     <span>Change</span>
                                     </button>
                                 </div>
                             </div>
                             <div className='flex justify-between h-[52px] mb-5.5'>
-                                <div  className='flex flex-col'>
-                            <label htmlFor="dob" className='text-gray-500'>Name</label>
+                                <div  className='flex flex-col '>
+                            <label htmlFor="dob" className='text-gray-500'>Date of birth</label>
                             <input type="date" id="dob" value={"09-01-2001"} className='font-semibold' />
                                 </div>
                                 <div >
-                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border'>
+                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
                                     <RiEditBoxFill className='text-[16px]' />
                                     <span>Change</span>
                                     </button>
