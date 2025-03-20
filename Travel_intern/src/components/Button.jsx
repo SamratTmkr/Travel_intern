@@ -3,7 +3,7 @@ const Button = ({
     icons,
     hasBackground = true,
     hasBorder = true,
-    variant = "primary"
+    variant
   }) => {
     // Style configurations based on variant
     const variantStyles = {
@@ -12,6 +12,19 @@ const Button = ({
         text: "text-black",
         border: "border-black"
       },
+      secondary: {
+        border: "border-blue-300 hover:bg-blue-200",
+        text: "text-black",
+      },
+      green: {
+        text: "text-green-500",
+        bg: "bg-green-200 hover:bg-green-300",
+      },
+      blue: {
+        text: "text-blue-400",
+        bg: "bg-green-200 hover:bg-green-300",
+      },
+     
     };
   
     // Get the correct style based on variant

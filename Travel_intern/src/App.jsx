@@ -8,8 +8,8 @@ const App = () => {
   return (
     <>
  
-   <main>
     <Layout/>
+   <main className='w-full h-full'>
    <Outlet/>
    </main>
      
