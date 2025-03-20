@@ -1,11 +1,15 @@
 import React from 'react'
-import Button from '../Components/Button'
-import { RiEditBoxFill } from 'react-icons/ri'
+import CarouselForHome from '../components/CarouselForHome'
+
 
 const Home = () => {
   return (
     <>
-      
+    <div className="px-10 rounded-2xl mt-17">
+
+      <CarouselForHome/>
+
+    </div>
     </>
   )
 }
