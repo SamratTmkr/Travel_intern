@@ -11,7 +11,7 @@ const Header = () => {
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
                     {/* Logo & Brand */}
                     <div className="flex items-center gap-2">
-                        <img src={Logos_flight} alt="Logo" className="h-8 w-8" />
+                        <img src={"./logo/logos_flight.png"} alt="Logo" className="h-8 w-8" />
                         <span className="text-xl font-bold text-black">AtlasXplore</span>
                     </div>
 
