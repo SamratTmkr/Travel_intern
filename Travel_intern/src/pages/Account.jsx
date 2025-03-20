@@ -15,7 +15,7 @@ const Account = () => {
                 <div className='absolute bottom-5 right-[20px] '>
                     <label htmlFor="userCoverPic" className='cursor-pointer flex gap-2 justify-center items-center py-2 px-4 bg-blue-300 rounded-sm oultine-none border-none'>
                     <IoCloudUpload /> 
-                    <span className='text-[14px] sm:hid'>Upload new cover</span>
+                    <span className='text-[14px] '>Upload new cover</span>
                     </label>
                     <input type="file" id='userCoverPic' className=' hidden ' />
                 </div>
@@ -55,7 +55,7 @@ const Account = () => {
                             <input type="text" id="name" value={"Preetam Ganesh"} className='font-semibold' />
                                 </div>
                                 <div >
-                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
+                                    <button className='cursor-pointer flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
                                     <RiEditBoxFill  className='text-[16px]'/>
                                     <span>Change</span>
                                     </button>
@@ -67,11 +67,11 @@ const Account = () => {
                             <input type="email" id="email" value={"preetamsthings@gamil.com"} className='font-semibold' />
                                 </div>
                                 <div className='flex gap-2' >
-                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
+                                    <button className='cursor-pointer flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
                                     < IoAddCircle  className='text-[16px]' />
                                     <span>Add another email</span>
                                     </button>
-                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
+                                    <button className='cursor-pointer flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
                                     <RiEditBoxFill  className='text-[16px]'/>
                                     <span>Change</span>
                                     </button>
@@ -83,7 +83,7 @@ const Account = () => {
                             <input type="passsword" id="passsword" value={"********"} className='font-semibold' />
                                 </div>
                                 <div >
-                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
+                                    <button className='cursor-pointer flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
                                     <RiEditBoxFill  className='text-[16px]'/>
                                     <span>Change</span>
                                     </button>
@@ -95,7 +95,7 @@ const Account = () => {
                             <input type="tel" id="phone" value={"9*********"} className='font-semibold' />
                                 </div>
                                 <div >
-                                    <button className='flex items-center gap-2 text-[16px] px-4 py-2 rounded-lg border md:mt-0'>
+                                    <button className='cursor-pointer flex items-center gap-2 text-[16px] px-4 py-2 rounded-lg border md:mt-0'>
                                     <RiEditBoxFill  />
                                     <span>Change</span>
                                     </button>
@@ -107,7 +107,7 @@ const Account = () => {
                             <input type="text" id="address" value={"Preetam Ganesh"} className='font-semibold' />
                                 </div>
                                 <div >
-                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
+                                    <button className='cursor-pointer flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
                                     <RiEditBoxFill className='text-[16px]' />
                                     <span>Change</span>
                                     </button>
@@ -119,7 +119,7 @@ const Account = () => {
                             <input type="date" id="dob" value={"09-01-2001"} className='font-semibold' />
                                 </div>
                                 <div >
-                                    <button className='flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
+                                    <button className='cursor-pointer flex items-center gap-2 text-[14px] px-4 py-2 rounded-lg border md:mt-0'>
                                     <RiEditBoxFill className='text-[16px]' />
                                     <span>Change</span>
                                     </button>
