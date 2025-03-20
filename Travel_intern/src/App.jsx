@@ -1,10 +1,18 @@
 import React from 'react'
-import MyRoute from './MyRoute'
+import { Outlet } from 'react-router-dom'
+import Layout from './layout/Layout'
+
+
 
 const App = () => {
   return (
     <>
-      <MyRoute />
+ 
+   <main>
+    <Layout/>
+   <Outlet/>
+   </main>
+     
     </>
   )
 }
