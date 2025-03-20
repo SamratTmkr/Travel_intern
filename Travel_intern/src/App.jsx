@@ -9,6 +9,7 @@ const App = () => {
     <>
  
     <Layout/>
+   <main className='w-full h-full'>
    <Outlet/>
      
     </>
