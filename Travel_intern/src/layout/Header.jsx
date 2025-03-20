@@ -1,4 +1,3 @@
-import { Box } from '@mui/material'
 import React from 'react'
 import Logos_flight from "../assets/logos_flight.png"
 
