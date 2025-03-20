@@ -1,9 +1,12 @@
-import { Box } from '@mui/material'
+
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <>
+
+        
             <nav className="bg-white shadow-md w-full fixed top-0 z-50">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
                     {/* Logo & Brand */}
@@ -14,18 +17,23 @@ const Header = () => {
 
                     {/* Navigation Links */}
                     <div className="hidden md:flex space-x-6 text-gray-700 font-medium">
-                        <a href="#" className="hover:text-blue-500">Home</a>
-                        <a href="#" className="hover:text-blue-500">Flights</a>
-                        <a href="#" className="hover:text-blue-500">Hotels</a>
-                        <a href="#" className="hover:text-blue-500">Stories</a>
-                        <a href="#" className="hover:text-blue-500">Help</a>
+                        <Link to={"/"} className="hover:text-blue-500">Home</Link>
+                        <Link to={"/flights"} className="hover:text-blue-500">Flights</Link>
+                        <Link to={"/hotels"} className="hover:text-blue-500">Hotels</Link>
+                        <Link to={"/stories"} className="hover:text-blue-500">Stories</Link>
+                        <Link to={"/help"} className="hover:text-blue-500">Help</Link>
 
                     </div>
 
                     {/* Login & Register Buttons */}
                     <div className="hidden md:flex space-x-4">
-                        <button className="px-4 py-1 border border-black rounded-md text-black">Login</button>
-                        <button className="px-4 bg-[#203553] text-white rounded-md">Register</button>
+                       <Link to={'/login'}>
+                       <button className="px-4 py-1 border border-black rounded-md text-black">Login</button> 
+                       </Link> 
+
+                       <Link to={'/register'}>
+                        <button className="px-4 py-1 bg-[#203553] text-white rounded-md">Register</button>
+                       </Link>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -42,10 +50,12 @@ const Header = () => {
 
                 {/* Mobile Menu */}
                 <div id="mobile-menu" className="hidden md:hidden bg-white shadow-md py-2 px-4 space-y-2">
-                    <a href="#" className="block py-2 text-gray-700 hover:text-blue-500">Home</a>
-                    <a href="#" className="block py-2 text-gray-700 hover:text-blue-500">About</a>
-                    <a href="#" className="block py-2 text-gray-700 hover:text-blue-500">Services</a>
-                    <a href="#" className="block py-2 text-gray-700 hover:text-blue-500">Contact</a>
+                    <Link to={"/"} className="block py-2 text-gray-700 hover:text-blue-500">Home</Link>
+                    <Link to={"/flights"} className="block py-2 text-gray-700 hover:text-blue-500">Flights</Link>
+                    <Link to={"/hotels"} className="block py-2 text-gray-700 hover:text-blue-500">Hotels</Link>
+                    <Link to={"/stories"} className="block py-2 text-gray-700 hover:text-blue-500">Stories</Link>
+                    <Link to={"/help"} className="block py-2 text-gray-700 hover:text-blue-500">Help</Link>
+
                     <div className="flex flex-col gap-2 mt-2">
                         <button className="px-4 py-2 border border-gray-300 rounded-md">Log In</button>
                         <button className="px-4 py-2 bg-blue-500 text-white rounded-md">Register</button>
