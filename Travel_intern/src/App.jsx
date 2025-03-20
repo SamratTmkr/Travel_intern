@@ -8,10 +8,8 @@ const App = () => {
   return (
     <>
  
-   <main>
     <Layout/>
    <Outlet/>
-   </main>
      
     </>
   )
