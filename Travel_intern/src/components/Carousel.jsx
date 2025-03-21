@@ -6,7 +6,7 @@ const MyCarousel = () => (
 
 
   <Carousel
-  className="rounded-3xl overflow-hidden"
+    className="rounded-3xl overflow-hidden"
     autoPlay
     infiniteLoop
     showThumbs={false}

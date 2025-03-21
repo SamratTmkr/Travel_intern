@@ -1,26 +1,16 @@
 import React from 'react'
-import Button from '../Components/Button'
-import { RiEditBoxFill } from 'react-icons/ri'
+import CarouselForHome from '../components/CarouselForHome'
+
 
 const Home = () => {
   return (
-    <div className='mt-20'>
-<Button value="Click me" />
+    <>
+    <div className="px-10 rounded-2xl mt-17">
 
-// Text with icon
-<Button value="Download" icons={<RiEditBoxFill />} hasBorder={false} />
+      <CarouselForHome/>
 
-// With styling options
-<Button 
-  value="Save" 
-  icons={<RiEditBoxFill />}
-  hasBackground={false}
-  hasBorder={true}
-  variant="success"
-/>
-
-<Button  icons={<RiEditBoxFill />}  hasBorder={false}/>
     </div>
+    </>
   )
 }
 
