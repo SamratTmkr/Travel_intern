@@ -12,7 +12,7 @@ const Login = () => {
       <Grid2 container margin={'auto'}  bgcolor={'white'}  alignItems={'center'} justifyContent={'center'} sx={{ p: { xs: 3, sm: 5, md: 8 }}}>
         <Grid2  size={{ xs: 12, md: 5 }} p={1}>
           <img src="./logo/logo.png" alt="" className=''/>
-<<<<<<< HEAD
+
           <Box width={'512px'} gap={'16px'} py={5} >
             <Typography variant='h3' color='black'>Login</Typography>
             <Typography variant='subtitle2' className='text-gray-500'>Login to acess your golobe account.</Typography>
@@ -26,7 +26,7 @@ const Login = () => {
             </Grid2>
             <Button variant='outlined' fullWidth sx={{ marginTop: '5px' }} >Submit</Button>
             <Typography variant='subtitle2' color='black' sx={{ textAlign: 'center', mt: '16px' }}>Don't have an account? <span className='text-red-400'>Sign Up</span></Typography>
-=======
+=======</Box>
           <Box  gap={'16px'} py={5} >
             <Typography variant='h3'>Login</Typography>
             <Typography variant='subtitle2' >Login to acess your golobe account.</Typography>
@@ -54,7 +54,6 @@ const Login = () => {
             </Grid2>
             <Button variant='outlined' fullWidth sx={{ marginTop: '5px' , background:'#66abc7', color:'black' }} >Submit</Button>
             <Typography variant='subtitle2'  sx={{ textAlign: 'center', mt: '16px' }}>Don't have an account? <Link className='text-[#ff8682]'> Sign Up </Link> </Typography>
->>>>>>> 8126d84e5220251b43b3f64c3f60188c9edd288a
 
           </Box>
           <Divider textAlign='center'  sx={{ my: '16px' }}>
