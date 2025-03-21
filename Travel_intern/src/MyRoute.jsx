@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import Login from "./pages/Login";
 import Histroy from "./pages/histroy";
 import UserInfo from "./pages/userInfo"
+import Flights from "./pages/flights";
 
 
 
@@ -17,6 +18,10 @@ const router = createBrowserRouter ([
             {
                 path:"",
                 element: <Home />
+            },
+            {
+                path:"/flights",
+                element: <Flights />
             },
            
             {
