@@ -1,8 +1,8 @@
 import React from 'react'
 import { IoIosAirplane } from "react-icons/io";
 import { IoBed } from "react-icons/io5";
-import TicketHistory from '../Components/TicketHistory';
-const Histroy = () => {
+import TicketHistory from '../components/TicketHistory';
+const History = () => {
   return (
     <div>
         <h2 className='text-2xl font-bold'>Ticketes/Booking</h2>
@@ -27,4 +27,4 @@ const Histroy = () => {
   )
 }
 
-export default Histroy
+export default History

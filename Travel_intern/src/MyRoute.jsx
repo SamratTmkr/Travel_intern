@@ -4,8 +4,8 @@ import Account from "./pages/Account";
 import App from "./App";
 import Home from "./pages/home";
 import Login from "./pages/Login";
-import Histroy from "./pages/histroy";
 import UserInfo from "./pages/userInfo"
+import History from "./pages/History";
 
 
 
@@ -28,8 +28,8 @@ const router = createBrowserRouter ([
                         element:<UserInfo/>
                     },
                     {
-                        path:"user_hstry",
-                        element:<Histroy/>
+                        path:"user_history",
+                        element:<History/>
                     },
                 ]
             },
