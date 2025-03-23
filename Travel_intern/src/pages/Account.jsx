@@ -11,14 +11,14 @@ const Account = () => {
 
   const tabs = [
     { path: "user_info", label: "Account" },
-    { path: "user_hstry", label: "History" },
-    { path: "user_hstry", label: "Payment methods" },
+    { path: "user_history", label: "History" },
+    { path: "user_history", label: "Payment methods" },
   ];
   return (
     <>
       <div>
-        <div className="min-h-screen w-full px-[102px] md:px-8 lg:px-24 mt-[135px] bg-[#FAFBFC]">
-          <div className="profile_pic h-[350px] md:h-80 w-full relative">
+        <div className="min-h-screen w-full  md:px-8 lg:px-24 mt-[135px] bg-[#FAFBFC]">
+          <div className="px-5 profile_pic h-[350px] md:h-80 w-full relative">
             <img
               src={CoverPic}
               alt="user cover pic"
@@ -26,18 +26,18 @@ const Account = () => {
               height={"100%"}
               className="w-full h-full"
             />
-            <div className="absolute bottom-5 right-[20px] ">
+            <div className="absolute bottom-5 right-14 ">
               <label
                 htmlFor="userCoverPic"
                 className="cursor-pointer flex gap-2 justify-center items-center py-2 px-4 bg-blue-300 rounded-sm oultine-none border-none"
               >
                 <IoCloudUpload />
-                <span className="text-[14px] ">Upload new cover</span>
+                <span className="text-[14px] hidden md:flex ">Upload new cover</span>
               </label>
               <input type="file" id="userCoverPic" className=" hidden " />
             </div>
           </div>
-          <div className=" w-full h-screen px-5">
+          <div className=" w-full min-h-screen px-5">
             <div className="user-info w-full h-[361px] text-center ">
               <div className="user-pic flex flex-col items-center mt-[-90px] mb-5">
                 <div>
