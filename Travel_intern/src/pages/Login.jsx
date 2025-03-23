@@ -26,36 +26,9 @@ const Login = () => {
             </Grid2>
             <Button variant='outlined' fullWidth sx={{ marginTop: '5px' }} >Submit</Button>
             <Typography variant='subtitle2' color='black' sx={{ textAlign: 'center', mt: '16px' }}>Don't have an account? <span className='text-red-400'>Sign Up</span></Typography>
-=======</Box>
-          <Box  gap={'16px'} py={5} >
-            <Typography variant='h3'>Login</Typography>
-            <Typography variant='subtitle2' >Login to acess your golobe account.</Typography>
-          </Box>
+</Box>
+          
 
-          <Box>
-            <Grid2  size={{ xs: 12, md: 12 }}  >
-              <TextField fullWidth placeholder='Enter Email' label='Email' variant='outlined' sx={{ mb: '24px' }}  />
-              <TextField fullWidth placeholder='Enter Password' label='Password' variant='outlined' 
-             type={eye ? "text":"password"}
-            sx={{position:'relative'}}
-             />
-              <span 
-              className='absolute top-1/2 right-1/2'
-              onClick={()=>{
- setEye(!eye)
-              }}>
-                
-                
-              {eye ? <Visibility/> : <VisibilityOff/> }
-              </span>
-              
-              <Typography variant='subtitle2'  sx={{ textAlign: 'right', mt: '16px' }}
-              >Forget Password</Typography>
-            </Grid2>
-            <Button variant='outlined' fullWidth sx={{ marginTop: '5px' , background:'#66abc7', color:'black' }} >Submit</Button>
-            <Typography variant='subtitle2'  sx={{ textAlign: 'center', mt: '16px' }}>Don't have an account? <Link className='text-[#ff8682]'> Sign Up </Link> </Typography>
-
-          </Box>
           <Divider textAlign='center'  sx={{ my: '16px' }}>
             Or login with
           </Divider>

@@ -28,11 +28,11 @@ const router = createBrowserRouter ([
             },
            
             {
-                path:"user",
+                path:"/user/user_info",
                 element: <Account />,
                 children:[
                     {
-                        path:"user_info",
+                        path:"",
                         element:<UserInfo/>
                     },
                     {
