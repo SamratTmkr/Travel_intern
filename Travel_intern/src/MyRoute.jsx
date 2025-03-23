@@ -5,8 +5,12 @@ import App from "./App";
 import Home from "./pages/home";
 import Login from "./pages/Login";
 import UserInfo from "./pages/userInfo"
+
+import Flights from "./pages/flights";
+
 import History from "./pages/History";
 import Signup from "./pages/Signup";
+
 
 
 
@@ -18,6 +22,10 @@ const router = createBrowserRouter ([
             {
                 path:"",
                 element: <Home />
+            },
+            {
+                path:"/flights",
+                element: <Flights />
             },
            
             {
