@@ -8,7 +8,9 @@ const Layout = () => {
   return (
     <>
     <Header/>/
+    <main className='w-full h-full'>
     <Outlet/>
+    </main>
     <Footer/>
     </>
   )
