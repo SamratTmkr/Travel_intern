@@ -7,10 +7,8 @@ import { Outlet } from 'react-router-dom'
 const Layout = () => {
   return (
     <>
-    <Header/>/
-    <main className='w-full h-full'>
+    <Header/>
     <Outlet/>
-    </main>
     <Footer/>
     </>
   )
