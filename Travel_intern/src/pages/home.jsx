@@ -1,5 +1,6 @@
 import React from 'react'
 import CarouselForHome from '../components/CarouselForHome'
+import FlightAndStays from '../components/FlightAndStays'
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <div className="px-10 rounded-2xl mt-17">
 
       <CarouselForHome/>
+      <FlightAndStays/>
 
     </div>
     </>
