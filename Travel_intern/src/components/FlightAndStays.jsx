@@ -96,7 +96,7 @@ export default function FlightAndStays() {
   }
 
   return (
-    <div className="w-full max-w-5xl mx-auto bg- rounded-lg shadow-md overflow-hidden">
+    <div className="w-290 mx-auto bg- rounded-lg shadow-md overflow-hidden">
       {/* Tabs */}
       <div className="w-full h-14 bg-gray-100 flex">
         <button
