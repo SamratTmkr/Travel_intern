@@ -57,6 +57,7 @@ const Flights = () => {
           >
             <Box sx={{ width: { xs: '100%', sm: '90%', md: '95%' }, maxWidth: 380 }}>
               <FlightCard 
+              type="flight"
                 destination={flight.destination} 
                 subtitle={flight.subtitle} 
                 price={flight.price} 

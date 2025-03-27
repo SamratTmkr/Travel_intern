@@ -9,6 +9,7 @@ import UserInfo from "./pages/userInfo"
 import Flights from "./pages/flights";
 
 import History from "./pages/History";
+import Stories from "./pages/stories";
 
 
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter ([
             {
                 path:"/flights",
                 element: <Flights />
+            },
+            {
+                path:"/stories",
+                element: <Stories />
             },
            
             {
