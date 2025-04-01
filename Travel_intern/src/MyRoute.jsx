@@ -7,11 +7,12 @@ import Login from "./pages/Login";
 import UserInfo from "./pages/userInfo"
 
 import Flights from "./pages/flights";
-
+import Help from "./pages/Help"
 import History from "./pages/History";
 import Stories from "./pages/stories";
 import Signup from "./pages/Signup";
 import Hotel from "./pages/hotel";
+
 
 
 
@@ -40,6 +41,10 @@ const router = createBrowserRouter ([
             {
                 path:"/hotels",
                 element: <Hotel />
+            },
+            {
+                path:"/help",
+                element: <Help />
             },
            
             {
