@@ -5,11 +5,11 @@ import { MdOutlineArrowOutward } from 'react-icons/md'
 const NewCard = ({imagePath, heading, title ,date, realTime, location}) => {
   return (
     <>
-    <Card sx={{ maxWidth: 590 , maxHeight:860 }}>
+    <Card sx={{ maxWidth: 590 , maxHeight:860, margin:2 }}>
       <CardActionArea>
         <CardMedia
           component="img"
-          className='h-[468px w-full]'
+          className='h-[468px] w-full'
           image={imagePath}
           alt={heading}
         />

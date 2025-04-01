@@ -3,7 +3,7 @@ import Image1 from "../assets/flight_photo/image1.png"
 import Image2 from "../assets/flight_photo/image2.png"
 import Image3 from "../assets/flight_photo/image3.png"
 import Buddha from "../assets/Buddha.png"
-import { Container, Grid, Box, Grid2 } from '@mui/material'
+import { Container, Grid, Box} from '@mui/material'
 import FlightCard from '../Components/FlightCard'
 import NewCard from '../Components/newCard'
 
@@ -75,7 +75,7 @@ const Stories = () => {
   return (
     <div>
         <div className=" w-full min-h-100vh mt-20">
-              <Container maxWidth="xl" sx={{ px: { xs: 2, sm: 4 } }}>
+              <Container maxWidth={false} >
               <Grid container spacing={2} sx={{ py: 4 }}>
                 {flights.map((flight) => (
                   <Grid 
@@ -101,26 +101,20 @@ const Stories = () => {
               </Grid>
             </Container>
             <div>
-                <h2 className='text-5xl font-semibold'>Top Travel Stories</h2>
+                <h2 className='text-5xl font-semibold my-2'>Top Travel Stories</h2>
                 <div className='mt-10'>
-                <Container maxWidth="xl" sx={{ px: { xs: 2, sm: 4 } }}>
-              <Grid container spacing={2} >
+                <Container maxWidth={false}>
+              <Grid container sx={{ py: 4 }} >
                 {news.map((newsItem) => (
-                  <Grid2
+                  <Grid
                     item 
                     key={newsItem.id} 
                     xs={12}     // 1 card per row on extra-small screens (mobile)
                     sm={12}      // 2 cards per row on small screens (tablets)
                     md={6}      // 3 cards per row on medium screens (desktops)
                     lg={6}      // 4 cards per row on large screens
-                    sx={{
-                      display: 'flex',
-                      alignItems:'ecnter',
-                      justifyContent: 'center',
-                      gap:'40px'
-                    }}
                   >
-                    <Box sx={{ width: { xs: '100%', sm: '90%', md: '95%' }, maxWidth: 610 }}>
+                    <Box sx={{ width: { xs: '100%', sm: '90%', md: '95%' }, maxWidth: 600 }}>
                       <NewCard
                         imagePath={newsItem.imagePath} 
                         heading={newsItem.heading}
@@ -130,7 +124,7 @@ const Stories = () => {
                         location={newsItem.location}
                       />
                     </Box>
-                  </Grid2>
+                  </Grid>
                  
                 ))}
               </Grid>

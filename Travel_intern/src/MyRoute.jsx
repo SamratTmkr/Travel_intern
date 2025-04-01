@@ -10,6 +10,8 @@ import Flights from "./pages/flights";
 
 import History from "./pages/History";
 import Stories from "./pages/stories";
+import Signup from "./pages/Signup";
+import Hotel from "./pages/hotel";
 
 
 
@@ -31,6 +33,14 @@ const router = createBrowserRouter ([
                 path:"/stories",
                 element: <Stories />
             },
+            {
+                path:"/stories",
+                element: <Stories />
+            },
+            {
+                path:"/hotels",
+                element: <Hotel />
+            },
            
             {
                 path:"/user/user_info",
@@ -50,6 +60,10 @@ const router = createBrowserRouter ([
             {
                 path:"login",
                 element: <Login />
+            },
+            {
+                path:"signup",
+                element: <Signup />
             },
             
         ]
