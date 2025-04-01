@@ -1,86 +1,109 @@
-import React from 'react'
+import React from "react";
 import { Telegram } from "@mui/icons-material";
-import Help_image from "../assets/help_img.png"
-import { Button, Container, Typography, Grid } from '@mui/material';
+import Help_image from "../assets/help_img.png";
+import { Button, Container, Typography, Grid, Box } from "@mui/material";
 
 const Help = () => {
   return (
-    <>
-    <div>
-    <Container className='mt-20 relative h-[calc(100vh - 122px)]'>
-        <Typography variant='h2' 
-        sx={{
-            textAlign:"center",
-            fontSize: { xs: '20px', sm: '28px'},
-            mb:"8px"
-        }}
-        >Asked Any Question Any Time </Typography>
-      <div className='w-full h-full'>
-        <img src={Help_image} alt="Help image" width="100%" height="100%" className='rounded-xl'/>
-      </div>
-      <div className='absolute bottom-[-42px] w-full h-52 flex items-center justify-between sm:px-4 md:px-20 '>
-        <Grid 
-          container 
+    <Box sx={{ height: "calc(100vh - 70px)", width: "100%", marginTop: "70px" }}>
+      <Container sx={{ height: "100%", position: "relative" }}>
+        
+        {/* Title */}
+        <Typography
+          variant="h5"
           sx={{
-            justifyContent: 'space-between', 
-            alignItems: 'center',
-            px: { xs: 2, sm: 5, md: 10 },
-            flexDirection: { xs: 'column', sm: 'row' },
-            backgroundColor: 'rgba(255, 255, 255, 0.2)', // Transparent white background
-            borderRadius: '10px',
-            boxShadow: '0px 2px 16px rgba(255, 255, 255, 0.6)', // White drop shadow effect
-            padding: '20px',
+            textAlign: "center",
+            fontSize: { xs: "20px", sm: "28px" },
+            mb: "8px",
           }}
         >
-          <Grid item xs={12} sm={6}>
-            <Button sx={{ 
-              color: 'white', 
-              fontSize: { xs: '12px', sm: '16px', md: '18px' },
-              my:{xs:"10px"}
-            }}>
-              Ask me Anything
-            </Button>
-            <Typography 
-              variant='h2' 
-              sx={{
-                color: 'white', 
-                fontSize: { xs: '20px', sm: '28px', md: '32px' },
-                my:{xs:"5px"}
-              }}
-            >
-              I'm OLIVIA
-            </Typography>
-            <Typography variant='body1' sx={{
-              color: 'white', 
-              fontSize: { xs: '14px', sm: '16px', md: '18px' },
-              my:{xs:"7px"}
-            }}>
-              Your personal AI travel assistant
-            </Typography>
-          </Grid>
-          <Grid item xs={12} sm={6} sx={{ textAlign: { xs: 'center', sm: 'right' } }}>
-            <Button sx={{
-              color: 'white', 
-              fontSize: { xs: '12px', sm: '16px', md: '18px' },
-            }}>
-              Start chat now
-            </Button>
-            <Telegram sx={{
-              width: { xs: '40px', sm: '50px', md: '70px' },
-              height: { xs: '40px', sm: '50px', md: '70px' },
-              backgroundColor: "blue",
-              borderRadius: "50%",
-              padding: "2px 4px",
-              marginLeft: "10px",
+          Ask Any Question Any Time
+        </Typography>
+
+        {/* Image Container with Overlay */}
+        <Box sx={{ width: "100%", height: "94%", position: "relative" }}>
+          
+          {/* Background Image */}
+          <img
+            src={Help_image}
+            alt="Help image"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              borderRadius: "10px",
+              display: "block",
+            }}
+          />
+
+          {/* Content Overlay */}
+          <Box
+            sx={{
+              position: "absolute",
+              bottom: 10,
+              left: 0,
+              right: 0,
+              backgroundColor: 'rgba(255, 255, 255, 0.2)', // Transparent white background
+                borderRadius: '10px',
+                boxShadow: '0px 2px 16px rgba(255, 255, 255, 0.6)', // White drop shadow effect
               color: "white",
-            }} />
-          </Grid>
-        </Grid>
-      </div>
-    </Container>
-    </div>
-    </>
+              padding: "20px",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <Grid
+              container
+              spacing={2}
+              alignItems="center"
+              justifyContent="space-between"
+            >
+              {/* Left Content */}
+              <Grid item xs={12} sm={6}>
+                <Typography variant="button" fontWeight="bold" 
+                sx={{
+                    backgroundColor:"white",
+                    padding:"10px 20px",
+                    color:"black",
+                    borderRadius:"8px"
+                }}>
+                  ASK ME ANYTHING
+                </Typography>
+                <Typography variant="h2" fontWeight="bold" 
+                sx={{
+                  margin:"15px 0",
+                  fontSize: { xs: "48px",  sm: "58px", md:"70px" }
+
+                  }}>
+                  I'm OLIVIA
+                </Typography>
+                <Typography variant="body2">
+                  Your personal AI travel assistant
+                </Typography>
+              </Grid>
+
+              {/* Right Content */}
+              <Grid item xs={12} sm={6} sx={{ textAlign: { xs: "center", sm: "right" } }}>
+                <Button sx={{ color: "white", fontSize: { xs: "12px", sm: "16px" } }}>
+                  Start chat now
+                </Button>
+                <Telegram
+                  sx={{
+                    fontSize: { xs: "30px", sm: "40px" },
+                    color: "white",
+                    backgroundColor: "blue",
+                    borderRadius: "50%",
+                    padding: "10px",
+                    marginLeft: "10px",
+                  }}
+                />
+              </Grid>
+            </Grid>
+          </Box>
+        </Box>
+      </Container>
+    </Box>
   );
-}
+};
 
 export default Help;
