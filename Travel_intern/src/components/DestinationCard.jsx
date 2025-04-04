@@ -1,20 +1,49 @@
-import React from 'react'
+import { Box, Card, CardContent, CardMedia, IconButton, Typography } from "@mui/material";
+import React from "react";
+import { FaHeart } from "react-icons/fa";
 
-const DestinationCard = () => {
-    return (
-        <div className="card bg-base-100 w-[295px]  ms-15 mt-[20px]">
-            <figure>
-                <img
-                    src="./Cards/Card1.png"
-                    alt="Shoes" className='h-[220px] mb-[14px]'/>
-            </figure>
-            <div className="leading-6 ">
-                <h2 className="card-title">Sweden</h2>
-                <p className='text-xs'>773 Properties</p>
-            </div>
-        </div>
-    )
-}
+const DestinationCard = ({ imagePath, destination, properties }) => {
+  return (
+    <Card
+      sx={{
+        borderRadius: "15px",
+        boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.1)",
+        position: "relative",
+        overflow: "hidden",
+        width: "100%",
+      }}
+    >
+      {/* Image with Heart Icon */}
+      <CardMedia
+        component="img"
+        height="150"
+        image={imagePath}
+        alt={destination}
+        sx={{ borderTopLeftRadius: "15px", borderTopRightRadius: "15px" }}
+      />
+      
+      {/* Favorite Icon */}
+      <IconButton
+        sx={{
+          position: "absolute",
+          top: 10,
+          right: 10,
+        }}
+      >
+        <FaHeart className="text-white"/>
+      </IconButton>
 
-export default DestinationCard
+      {/* Card Content (Text) */}
+      <CardContent sx={{ padding: "10px 16px" }}>
+        <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+          {destination}
+        </Typography>
+        <Typography variant="body2" color="textSecondary">
+          {properties} properties
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+};
 
+export default DestinationCard;
